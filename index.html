@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .transformation_1{
+        width: 200px;
+        height: 100px;
+        margin-top: 50px;
+        background-color: rgb(235, 122, 84);
+    }
+
+    .transformation_1:hover{
+        transform: translate(100px, 100px)
+    }
+
+    .transformation_2{
+        width: 200px;
+        height: 100px;
+        margin-top: 50px;
+        background-color: rgb(117, 84, 235);
+    }
+
+    .transformation_2:hover{
+        transform: scale(2,2);
+        cursor: pointer;
+
+    }
+
+    .transformation_3{
+        width: 200px;
+        height: 100px;
+        margin-top: 50px;
+        background-color: blue;
+    }
+
+    .transformation_3:hover{
+        cursor: pointer;
+        transform: rotate(75deg);
+    }
+
+    .transformation_4{
+        width: 200px;
+        height: 100px;
+        margin-top: 50px;
+        background-color: green;
+    }
+
+    .transformation_4:hover{
+        cursor: pointer;
+        transform: skew(30deg, 30deg);
+        transition-duration: .5s;
+    }
+
+    .transformation_5{
+        width: 200px;
+        height: 100px;
+        margin-top: 50px;
+        background-color: pink;
+        animation-duration: .5s;
+        animation-name: skew_animation;
+    }
+
+    @keyframes skew_animation {
+        0%{
+            transform: skew(0deg);
+        }
+        25%{
+            transform: skew(30deg);
+        }
+        50%{
+            transform: skew(-30deg);
+        }
+        100%{
+            background-color: cyan;
+        }
+    }
+
+
+</style>
+<body>
+    <center>
+    <div class="transformation_1">
+    </div>
+
+
+    <div class="transformation_2"></div>
+
+    <div class="transformation_3"></div>
+    <div class="transformation_4"></div>
+    <div class="transformation_5"></div>
+    </center>
+</body>
+</html>
